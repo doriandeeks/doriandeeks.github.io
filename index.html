@@ -71,6 +71,18 @@
             border-bottom: 1px solid #ddd;
             margin-bottom: 50px;
         }
+        
+        .header-content {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
 
         h1 {
             font-size: 2.5em;
@@ -225,6 +237,7 @@
         <div class="lang-content active" data-lang="fr">
             <header>
                 <h1>Dorian Deeks</h1>
+                <img src="photo.jpg" alt="Dorian Deeks" class="profile-photo">
                 <p class="subtitle">Doctorant en Économie Comportementale et Expérimentale</p>
                 <div class="contact">
                     <a href="mailto:dorian.deeks@sncf.fr">Email</a>
