@@ -196,6 +196,39 @@
         .lang-content.active {
             display: block;
         }
+        
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(to bottom, #2c5aa0, #e0e0e0);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #2c5aa0;
+            border: 3px solid #fafafa;
+            box-shadow: 0 0 0 2px #2c5aa0;
+        }
 
         @media (max-width: 768px) {
             .header-wrapper {
@@ -308,21 +341,47 @@
                 </div>
             </section>
 
-            <section id="education">
-                <h2>Formation</h2>
+            <section id="professional">
+                <h2>Expériences Professionnelles</h2>
                 <p>
                     <strong>Doctorat en Économie</strong> — Université Paris 1 Panthéon-Sorbonne, 2025 - 2028<br>
                     Sujet : Impact des Structures Tarifaires sur le Report Modal: une approche cognitive et expérimentale.
                 </p>
                 <p>
-                    <strong>Master d'Économie & Psychologie</strong> — Université Paris 1 Panthéon-Sorbonne, École d'Économie de Paris, 
-                    Université Paris-Cité, 2022 - 2024<br>
-                    Mention Très Bien
+                    <strong>Ingénieur de Recherche</strong> — Portalia pour SNCF, 2024 - 2025<br>
                 </p>
                 <p>
-                    <strong>Licence d'Économie</strong> — Université Paris 1 Panthéon-Sorbonne, 2019 - 2022<br>
-                    Mention Bien
+                    <strong>Stagiaire</strong> — École d'Économie de Paris, 2024<br>
+                    Partenariat avec la Direction de la Recherche (DTIPG) de la SNCF.
                 </p>
+                <p>
+                    <strong>Assistant de Recherche</strong> — Université Paris-Cité, 2023<br>
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>Formation</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <p>
+                            <strong>Doctorat en Économie</strong> — Université Paris 1 Panthéon-Sorbonne, 2025 - 2028<br>
+                            Sujet : Impact des Structures Tarifaires sur le Report Modal: une approche cognitive et expérimentale.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>
+                            <strong>Master d'Économie & Psychologie</strong> — Université Paris 1 Panthéon-Sorbonne, École d'Économie de Paris, 
+                            Université Paris-Cité, 2022 - 2024<br>
+                            Mention Très Bien
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>
+                            <strong>Licence d'Économie & Psychologie</strong> — Université Paris 1 Panthéon-Sorbonne, 2019 - 2022<br>
+                            Mention Bien
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <footer>
