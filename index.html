@@ -66,22 +66,30 @@
         }
 
         header {
-            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 60px 0 40px;
             border-bottom: 1px solid #ddd;
             margin-bottom: 50px;
         }
         
-        .header-content {
-            flex: 1;
+        .header-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
         }
-
+        
         .profile-photo {
             width: 180px;
             height: 180px;
             object-fit: cover;
             border-radius: 8px;
-            flex-shrink: 0;
+        }
+        
+        .header-content {
+            text-align: left;
         }
 
         h1 {
@@ -189,6 +197,15 @@
         }
 
         @media (max-width: 768px) {
+            .header-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .header-content {
+                text-align: center;
+            }
+            
             h1 {
                 font-size: 2em;
             }
@@ -236,17 +253,20 @@
         <!-- French Version -->
         <div class="lang-content active" data-lang="fr">
             <header>
-                <div class="header-content">
-                    <h1>Dorian Deeks</h1>
-                    <p class="subtitle">Doctorant en Économie Comportementale et Expérimentale</p>
-                    <div class="contact">
-                        <a href="mailto:dorian.deeks@sncf.fr">Email</a>
-                        <a href="https://linkedin.com/in/dorian-deeks-behavioural-economist">LinkedIn</a>
-                        <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Dorian+Deeks&btnG=">Google Scholar</a>
+                <div class="header-wrapper">
+                    <img src="photo.jpg" alt="Dorian Deeks" class="profile-photo">
+                    <div class="header-content">
+                        <h1>Dorian Deeks</h1>
+                        <p class="subtitle">Doctorant en Économie Comportementale et Expérimentale</p>
+                        <div class="contact">
+                            <a href="mailto:dorian.deeks@sncf.fr">Email</a>
+                            <a href="https://linkedin.com/in/dorian-deeks-behavioural-economist">LinkedIn</a>
+                            <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Dorian+Deeks&btnG=">Google Scholar</a>
+                        </div>
                     </div>
                 </div>
-                <img src="photo.jpg" alt="Dorian Deeks" class="profile-photo">
             </header>
+
 
             <section id="about">
                 <h2>Présentation</h2>
