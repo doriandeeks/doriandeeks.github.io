@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dorian Deeks</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    
+    <title>Prénom Nom - Chercheur</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +12,7 @@
         }
 
         body {
-            font-family: 'Lora', serif;
+            font-family: 'Georgia', serif;
             line-height: 1.6;
             color: #333;
             background-color: #fafafa;
@@ -52,11 +47,11 @@
         }
 
         .lang-btn[data-lang="fr"].active {
-            box-shadow: 0 0 1px rgba(0, 38, 127, 0.6), 0 0 1px rgba(237, 41, 57, 0.4);
+            box-shadow: 0 0 15px rgba(0, 38, 127, 0.6), 0 0 25px rgba(237, 41, 57, 0.4);
         }
 
         .lang-btn[data-lang="en"].active {
-            box-shadow: 0 0 1px rgba(1, 33, 105, 0.6), 0 0 1px rgba(200, 16, 46, 0.4);
+            box-shadow: 0 0 15px rgba(1, 33, 105, 0.6), 0 0 25px rgba(200, 16, 46, 0.4);
         }
 
         .flag {
@@ -66,10 +61,38 @@
         }
 
         header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 60px 0 40px;
             border-bottom: 1px solid #ddd;
             margin-bottom: 50px;
+            gap: 40px;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+            overflow: hidden;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -194,6 +217,20 @@
                 justify-content: center;
                 margin-bottom: 20px;
             }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-content {
+                text-align: center;
+            }
+
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -222,35 +259,35 @@
         <!-- French Version -->
         <div class="lang-content active" data-lang="fr">
             <header>
-                <h1>Dorian Deeks</h1>
-                <p class="subtitle">Doctorant en Économie Comportementale et Expérimentale</p>
+                <h1>Prénom Nom</h1>
+                <p class="subtitle">Doctorant en Informatique</p>
                 <div class="contact">
-                    <a href="mailto:dorian.deeks@sncf.fr">Email</a>
-                    <a href="https://linkedin.com/in/dorian-deeks-behavioural-economist">LinkedIn</a>
-                    <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Dorian+Deeks&btnG=">Google Scholar</a>
+                    <a href="mailto:prenom.nom@universite.fr">Email</a>
+                    <a href="https://github.com/votreprofil">GitHub</a>
+                    <a href="https://scholar.google.com">Google Scholar</a>
                 </div>
             </header>
 
             <section id="about">
-                <h2>Présentation</h2>
+                <h2>À propos</h2>
                 <p>
-                    Je suis doctorant CIFRE à l'Université Paris 1 Panthéon-Sorbonne, l'École d'Économie de Paris, et la SNCF, 
-                    sous la direction de Nicolas Jacquemet. Mes recherches doctorales se concentrent sur l'impact des structures tarifaires 
-                    existantes et innovantes sur le report modal vers les transports publics. Ces travaux sont envisagés au travers du prisme 
-                    de l'économie comportementale et utilisent les techniques issues de l'économie expérimentale.
+                    Je suis doctorant en informatique à l'Université [Nom], sous la direction du Professeur [Nom]. 
+                    Mes recherches se concentrent sur l'intelligence artificielle et l'apprentissage automatique, 
+                    avec un intérêt particulier pour les applications en traitement du langage naturel.
                 </p>
                 <p>
-                    De manière générale, je suis intéressé par la perception au sens large et, légèrement plus précisément, par la perception 
-                    qu'ont les individus de leur environnement de décision et par les conséquences de ces dernières sur les choix.
+                    Mon travail vise à développer des méthodes innovantes pour améliorer la compréhension 
+                    et la génération de texte par les systèmes automatiques.
                 </p>
             </section>
 
             <section id="research">
                 <h2>Intérêts de recherche</h2>
                 <div class="research-interests">
-                    <span class="tag">Économie Comportementale</span>
-                    <span class="tag">Économie Expérimentale</span>
-                    <span class="tag">Sciences Cognitives</span>
+                    <span class="tag">Intelligence Artificielle</span>
+                    <span class="tag">Apprentissage Automatique</span>
+                    <span class="tag">Traitement du Langage Naturel</span>
+                    <span class="tag">Deep Learning</span>
                 </div>
             </section>
 
@@ -258,32 +295,33 @@
                 <h2>Publications</h2>
                 
                 <div class="publication">
-                    <div class="publication-title">Soft and Timely Monetary Incentives to Shift Commuters' Modal Choices [Under Review]</div>
-                    <div class="publication-authors">Dorian Deeks, Élise Grison, Simone Morgagni.</div>
-                    <div class="publication-venue">[Under Review]</div>
+                    <div class="publication-title">Titre de la publication 1</div>
+                    <div class="publication-authors">Prénom Nom, Co-auteur A., Co-auteur B.</div>
+                    <div class="publication-venue">Conférence Internationale, 2024</div>
                 </div>
 
                 <div class="publication">
-                    <div class="publication-title">Inflation Perception as a Product of Experience and Information: a Pilot Investigation</div>
-                    <div class="publication-authors">Dorian Deeks, Victoire Chatain.</div>
-                    <div class="publication-venue">Unpublished but Freely Available, 2025</div>
+                    <div class="publication-title">Titre de la publication 2</div>
+                    <div class="publication-authors">Co-auteur A., Prénom Nom, Co-auteur C.</div>
+                    <div class="publication-venue">Journal Scientifique, Vol. X, 2023</div>
+                </div>
+
+                <div class="publication">
+                    <div class="publication-title">Titre de la publication 3</div>
+                    <div class="publication-authors">Prénom Nom, Co-auteur D.</div>
+                    <div class="publication-venue">Workshop International, 2023</div>
                 </div>
             </section>
 
             <section id="education">
                 <h2>Formation</h2>
                 <p>
-                    <strong>Doctorat en Économie</strong> — Université Paris 1 Panthéon-Sorbonne, 2025 - 2028<br>
-                    Sujet : Impact des Structures Tarifaires sur le Report Modal: une approche cognitive et expérimentale.
+                    <strong>Doctorat en Informatique</strong> — Université [Nom], 2022 - Présent<br>
+                    Sujet : [Titre de la thèse]
                 </p>
                 <p>
-                    <strong>Master d'Économie & Psychologie</strong> — Université Paris 1 Panthéon-Sorbonne, École d'Économie de Paris, 
-                    Université Paris-Cité, 2022 - 2024<br>
+                    <strong>Master en Informatique</strong> — Université [Nom], 2020 - 2022<br>
                     Mention Très Bien
-                </p>
-                <p>
-                    <strong>Licence d'Économie & Psychologie</strong> — Université Paris 1 Panthéon-Sorbonne, 2019 - 2022<br>
-                    Mention Bien
                 </p>
             </section>
 
