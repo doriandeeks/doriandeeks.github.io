@@ -1,18 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dorian Deeks</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Prénom Nom - Chercheur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            font-size: 0.95em;
+            color: #777;
+        }
+
+        .contact a {
+            color: #2c5aa0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .publication {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 3px;
+        }
+
+        .publication-venue {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background-color: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #999;
+            font-size: 0.85em;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Dorian Deeks</h1>
-    </header>
-    <section>
-        <h2>Research Interests</h2>
-        <p>My research interests revolves around behavioural economics, experimental economics, and cognitive psychology. More generally, I'm interested in how humans perceive the context in which they make decisions, as well as the influence of modulations therein.</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Prénom Nom</h1>
+            <p class="subtitle">Doctorant en Informatique</p>
+            <div class="contact">
+                <a href="mailto:prenom.nom@universite.fr">Email</a>
+                <a href="https://github.com/votreprofil">GitHub</a>
+                <a href="https://scholar.google.com">Google Scholar</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                Je suis doctorant en informatique à l'Université [Nom], sous la direction du Professeur [Nom]. 
+                Mes recherches se concentrent sur l'intelligence artificielle et l'apprentissage automatique, 
+                avec un intérêt particulier pour les applications en traitement du langage naturel.
+            </p>
+            <p>
+                Mon travail vise à développer des méthodes innovantes pour améliorer la compréhension 
+                et la génération de texte par les systèmes automatiques.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Intérêts de recherche</h2>
+            <div class="research-interests">
+                <span class="tag">Intelligence Artificielle</span>
+                <span class="tag">Apprentissage Automatique</span>
+                <span class="tag">Traitement du Langage Naturel</span>
+                <span class="tag">Deep Learning</span>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="publication">
+                <div class="publication-title">Titre de la publication 1</div>
+                <div class="publication-authors">Prénom Nom, Co-auteur A., Co-auteur B.</div>
+                <div class="publication-venue">Conférence Internationale, 2024</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Titre de la publication 2</div>
+                <div class="publication-authors">Co-auteur A., Prénom Nom, Co-auteur C.</div>
+                <div class="publication-venue">Journal Scientifique, Vol. X, 2023</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Titre de la publication 3</div>
+                <div class="publication-authors">Prénom Nom, Co-auteur D.</div>
+                <div class="publication-venue">Workshop International, 2023</div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Formation</h2>
+            <p>
+                <strong>Doctorat en Informatique</strong> — Université [Nom], 2022 - Présent<br>
+                Sujet : [Titre de la thèse]
+            </p>
+            <p>
+                <strong>Master en Informatique</strong> — Université [Nom], 2020 - 2022<br>
+                Mention Très Bien
+            </p>
+        </section>
+
+        <footer>
+            <p>Dernière mise à jour : Octobre 2025</p>
+        </footer>
+    </div>
 </body>
 </html>
